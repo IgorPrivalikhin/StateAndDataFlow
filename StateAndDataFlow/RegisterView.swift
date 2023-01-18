@@ -8,9 +8,6 @@
 import SwiftUI
 
 struct RegisterView: View { // экран логина
-  //  @State private var name = "" // св-во под состояние
-   // @State private var charactersCount = 0 // счетчик букв
-   // @EnvironmentObject private var userManager: UserManager // доступ к экз-ру через обертку @EnvironmentObject - позволяет следить за сотоянием объекта
     @StateObject private var appStorageManager = AppStorageManager()
     @EnvironmentObject private var userManager: UserManager
     //@Binding var text: String
