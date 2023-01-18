@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct StateAndDataFlowApp: App {
+    @StateObject private var userManager = UserManager() // экз-р класса UserManager( для того чтобы св-во было доступно в рамках всего проекта
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StarterView() // для отображения страртового вью
+                .environmentObject(userManager) // инициализация св-ва через .environmentObject
         }
     }
 }
